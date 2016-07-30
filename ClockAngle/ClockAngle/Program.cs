@@ -10,8 +10,6 @@ namespace ClockAngle
      * IN 24 FORMAT
      METHOD HAS STRING TYPE PARAMETER*/
 
-
-
     class Program
     {
         //method to solve problem
