@@ -9,58 +9,41 @@ namespace FastArraySort
 
     class Program
     {
-        //sorting
-        public void FastSort(double[] Array, int left, int right)
-        {
-            //vars
-            int l = left;
-            int r = right;
-
-
-            //we need center point's value  in array
-            double center = Array[(l + r) / 2];
-
-
-
-            do
-            {
-                while (Array[l] < center)
-                {
-                    l++;
-                }
-
-                while (Array[r] > center)
-                {
-                    r--;
-                }
-
-                if (l <= r)
-                {
-                    double buffor = Array[l];
-                    Array[l] = Array[r];
-
-                    l++;
-                    r--;
-
-                }
-            }
-
-            while (l <= r);
-
-            if(left<r)
-            {
-                FastSort(Array, left, r);
-            }
-            if(right>l)
-            {
-                FastSort(Array, l, right);
-            }
-        }
-
-
+        
         //MAIN
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Choose size of Array");
+            int size = Convert.ToInt32(Console.ReadLine());
+            
+
+            //our array to sorting
+            double[] Array = new double[size];
+
+            //random number
+            Random random = new Random(1000);
+
+            //array filling
+            for (int i = 0; i<size; i++)
+            {
+                Array[i] = random.Next(0, 100);
+            }
+
+            Console.WriteLine("Random array of values:");
+            foreach(double d in Array)
+            {
+                Console.Write(d + ", ");
+            }
+
+            FastSort f = new FastSort();
+            
+            Console.WriteLine("\nSorted array");
+            f.Sort(Array, 0, Array.Length-1);
+
+            
+            Console.ReadKey();
+
         }
     }
 }
