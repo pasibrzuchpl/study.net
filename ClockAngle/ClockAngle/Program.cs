@@ -27,7 +27,7 @@ namespace ClockAngle
             if (h > 12)
                 h /= 2;
 
-            //calculation for hour hand and minutes hand of clock
+            //calculation for hour hand and minutes hands of clock
             //basicly its angle from the vertical
             double hAngle = h * 30 + (m / 60) * 30;
             double mAngle = m * 6;
@@ -73,7 +73,7 @@ namespace ClockAngle
             userMinutes=userMinutes.Trim();
 
 
-            //concatination of strings in one data string 
+            //concatination of strings in one time string 
             string time = string.Concat(userHour, userMinutes);
 
 
