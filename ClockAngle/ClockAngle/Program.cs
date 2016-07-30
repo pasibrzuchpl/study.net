@@ -58,14 +58,14 @@ namespace ClockAngle
 
 
 
-            Console.WriteLine("Type hour: [0-60]");
+            Console.WriteLine("Type hour: [0-59]");
             string userMinutes = Console.ReadLine();
 
             //if minutes format is wrong
             while (Convert.ToInt32(userMinutes) > 60 || Convert.ToInt32(userMinutes) < 0)
             {
 
-                Console.WriteLine("Wrong number, type minutes: [0-60]:");
+                Console.WriteLine("Wrong number, type minutes: [0-59]:");
                 userHour = Console.ReadLine();
                 
             }
