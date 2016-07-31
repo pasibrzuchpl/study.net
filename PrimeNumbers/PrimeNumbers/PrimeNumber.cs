@@ -9,24 +9,29 @@ namespace PrimeNumbers
     class PrimeNumber
     {
         public int L(int N)
-        {
-            int i, j;
+        {   //first prime number = 2
+            int i = 2;
+            int j = 2 ;
             int low = 3;
             int ans=0;
 
-
-            for (i = 2; i <= N;)
+            //algoritm
+            while (i <= N)
             {
-                for (j = 2; j <= i - 1; j++)
+                while(j <= i - 1)
                 {
                     if (low % j == 0)
                         break;
+                    j++;
+
                 }
+
                 if (j == i)
                 {
                     ans = low;
                     i++;
                 }
+
                 low++;
                 
             }

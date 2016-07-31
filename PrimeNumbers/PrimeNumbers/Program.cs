@@ -8,7 +8,7 @@ namespace PrimeNumbers
 {
     class Program
     {/* PROGRAM TO FINDING PRIME NUMBER BY THEY ORDER
-        e.g. L(10)=47, because 47 is 10th prime number*/
+        e.g. L(5)=1, because 11 is the 5th prime number*/
 
         static void Main(string[] args)
         {
@@ -17,7 +17,7 @@ namespace PrimeNumbers
 
             PrimeNumber L = new PrimeNumber();
 
-            Console.WriteLine("{0} prime number is {1}", n, L.L(n));
+            Console.WriteLine("\n{0} prime number is {1}", n, L.L(n));
             Console.ReadKey();
 
 
