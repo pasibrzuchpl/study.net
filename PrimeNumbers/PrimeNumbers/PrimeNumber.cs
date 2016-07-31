@@ -8,11 +8,11 @@ namespace PrimeNumbers
 {
     class PrimeNumber
     {
-        public void L(int N)
+        public int L(int N)
         {
             int i, j;
             int low = 3;
-            int ans;
+            int ans=0;
 
 
             for (i = 2; i <= N;)
@@ -30,8 +30,8 @@ namespace PrimeNumbers
                 low++;
                 
             }
-            Console.WriteLine(ans);
-            Console.ReadKey();
+            return ans;
+            
 
         } 
 

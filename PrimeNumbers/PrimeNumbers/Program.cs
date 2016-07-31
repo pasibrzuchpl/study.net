@@ -16,7 +16,10 @@ namespace PrimeNumbers
             int n = Convert.ToInt32(Console.ReadLine());
 
             PrimeNumber L = new PrimeNumber();
-            L.L(n);
+
+            Console.WriteLine("{0} prime number is {1}", n, L.L(n));
+            Console.ReadKey();
+
 
         }
     }
