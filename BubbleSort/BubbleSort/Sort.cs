@@ -8,15 +8,19 @@ namespace BubbleSort
 {
     class Sort
     { //bubble sorting algoritm
-        public void sort(double[] Array, int n)
+      //SORTING IN INCREASING ORDER
+
+        public void sort(double[] Array)
         {
             double buffor;
             //double loop for sorting
-            for (int i = n - 1; i > 0; i--)
+            //from the end (lengh-1) to beginning, with deincrementation
+            for (int i = Array.Length - 1; i > 0; i--)
+                //from 0, to moment when j<i, then there is next loop round of "i"
                 for (int j = 0; j < i; j++)
-                {
+                {   //if number in array is higher then next one in this array
                     if (Array[j]> Array[j+1])
-                    {
+                    {   //new buffor var is needed to save value of higher
                         buffor = Array[j];
                         Array[j] = Array[j + 1];
                         Array[j + 1] = buffor;

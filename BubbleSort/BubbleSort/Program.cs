@@ -36,7 +36,7 @@ namespace BubbleSort
             Sort s = new Sort();
 
             Console.WriteLine("\nSorted array");
-            s.sort(Array, size);
+            s.sort(Array);
 
 
             Console.ReadKey();
