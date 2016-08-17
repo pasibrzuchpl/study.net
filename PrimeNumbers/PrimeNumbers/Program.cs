@@ -15,9 +15,8 @@ namespace PrimeNumbers
             Console.WriteLine("Type L(N) to find:");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            PrimeNumber L = new PrimeNumber();
-
-            Console.WriteLine("\n{0} prime number is {1}", n, L.L(n));
+            
+            Console.WriteLine("\n{0} prime number is {1}", n, PrimeNumber.L(n));
             Console.ReadKey();
 
 

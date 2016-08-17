@@ -8,7 +8,7 @@ namespace PrimeNumbers
 {
     class PrimeNumber
     {
-        public int L(int N)
+        public static int L(int N)
         {   //first prime number = 2
             int i = 2;
             int j = 2 ;
