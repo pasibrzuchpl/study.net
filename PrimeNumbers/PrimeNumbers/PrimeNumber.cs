@@ -8,37 +8,32 @@ namespace PrimeNumbers
 {
     class PrimeNumber
     {
-        public static int L(int N)
+        public static void L(int N)
         {   //first prime number = 2
-            int i = 2;
-            int j = 2 ;
-            int low = 3;
-            int ans=0;
+            int PrimeNumber = 3, count=2, c=2, ans=0;
 
-            //algoritm
-            while (i <= N)
+            if (N == 1)
+                Console.WriteLine(2);
+
+            while(count <= N)
             {
-                while(j <= i - 1)
+                for (c = 2; c <= PrimeNumber - 1; c++)
                 {
-                    if (low % j == 0)
+                    if (PrimeNumber % c == 0)
                         break;
-                    j++;
-
                 }
-
-                if (j == i)
+                if (c == PrimeNumber)
                 {
-                    ans = low;
-                    i++;
+                    ans = PrimeNumber;
+                    count++;
                 }
+                PrimeNumber++;
 
-                low++;
-                
+            
             }
-            return ans;
+            Console.WriteLine(ans);
             
 
-        } 
- 
-     }
+        }
+    }
 }

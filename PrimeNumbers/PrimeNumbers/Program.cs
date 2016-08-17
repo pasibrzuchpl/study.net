@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PrimeNumbers
 {
     class Program
-    {/* PROGRAM TO FINDING PRIME NUMBER BY THEY ORDER
+    {/* PROGRAM TO FINDING PRIME NUMBER BY THEY NUMBER IN ORDER
         e.g. L(5)=1, because 11 is the 5th prime number*/
 
         static void Main(string[] args)
@@ -16,7 +16,8 @@ namespace PrimeNumbers
             int n = Convert.ToInt32(Console.ReadLine());
 
             
-            Console.WriteLine("\n{0} prime number is {1}", n, PrimeNumber.L(n));
+            Console.Write("\n{0} prime number is ", n);
+            PrimeNumber.L(n);
             Console.ReadKey();
 
 
